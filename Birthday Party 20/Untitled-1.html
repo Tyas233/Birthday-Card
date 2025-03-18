@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Undangan Ulang Tahun Spesial</title>
+        <link rel="stylesheet" href="babi/css/styles.css">
+    </head>
+<body>
+    <!-- Cover -->
+    <div id="cover" class="cover">
+        <h1>Happy Birthday
+            Dwiyanty Muara Ning Tyas</h1>
+        <p>Mahasiswa Psikologi 23 C Unmuh Jember</p>
+        <button id="openButton">Buka Undangan</button>
+    </div>
+    
+    <!-- Isi Konten -->
+    <div id="content" class="content hidden"style="height: 200px;">
+        <div class="header">
+            <h1>Welcome My Birthday Guest</h1>
+            <p>To My Birthday Web</p>
+        </div>
+        
+        <!-- Countdown -->
+        <div class="countdown">
+            <div class="countdown-item">
+                <span id="days">00</span>
+                <span>Hari</span>
+            </div>
+            <div class="countdown-item">
+                <span id="hours">06</span>
+                <span>Jam</span>
+            </div>
+            <div class="countdown-item">
+                <span id="minutes">59</span>
+                <span>Menit</span>
+            </div>
+            <div class="countdown-item">
+                <span id="seconds">56</span>
+                <span>Detik</span>
+            </div>
+        </div>
+        
+        <!-- Tombol Simpan di Kalender -->
+        <button class="calendar-button">Simpan di Kalender</button>
+        
+        <!-- Detail Acara -->
+        <div class="event-details">
+            <h2>SELASA, 18 MARET 2025 - MINGGU, 23 MARET 2025</h2>
+            <p>13.00 WIB – 19.00 WIB</p>
+            <h3>KOST DIRAA</h3>
+            <p>Jl. KARIMATA IV NO 36, SUMBERSARI, KAB. JEMBER</p>
+        </div>
+        
+        <!-- Peta Lokasi -->
+        <div class="section">
+            <h3>Lokasi Acara</h3>
+            <a href="https://maps.app.goo.gl/kGsMRnUXrkRWeFVq6"><img src="logo/gps-logo-png-7.jpg" alt="logo" width="100" height="100"></a>
+            <div id="map" class="map"></div>
+           <img src="logo/foto3.jpeg" style="height: 200px;">
+        </div>
+        
+             <!-- Kesan dan Pesan -->
+        <div class="section">
+            <h3>Kesan dan Pesan</h3>
+            <textarea id="message" placeholder="Tulis kesan dan pesanmu di sini..."></textarea>
+            <button id="submitMessage">Kirim</button>
+            <!-- Tempat untuk menampilkan pesan -->
+            <div id="messageDisplay">
+                <p class="initial-message">Pesan 1 (Pesan awal)</p>
+                <p class="user-message">answer</p>
+            </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>Undangan Digital</p>
+            <p>Untuk informasi lebih lanjut, hubungi kami.</p>
+            <img src="logo/foto 2.jpg">
+        </div>
+    </div>
+
+    <!-- Audio untuk Musik -->
+    <audio id="birthdayMusic" src="MUSIC/birthday_music.mp3.mpeg" loop></audio>
+    <!-- Google Maps Lokasi -->
+    <script src="babi/JS/script.js"></script>
+</body>
+</html>
